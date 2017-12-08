@@ -1,0 +1,5 @@
+<link href="http://fonts.googleapis.com/css?family=Domine" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="//use.typekit.net/aha4xjl.js"></script>
+<script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+
+Please review other Sheridan site stylesheets for information on using these fonts.

@@ -17,7 +17,26 @@
 	background-color: #ea401c;
 	color: white;
 }
-@media all and (max-width : 1250px) {
+.contentsHeading {
+	font-size: 20px;
+	padding-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+.contentDesc {
+	min-height: 60px;
+}
+@media all and (min-width: 500px) and (max-width: 600px) {
+	.mobileBlock {
+		padding: 0 50px !important;
+	}
+}
+@media all and (min-width: 600px) and (max-width: 768px) {
+	.mobileBlock {
+		padding: 0 100px !important;
+	}
+}
+@media all and (max-width: 783px) {
 	.register {
 		display: none;
 	}
@@ -25,12 +44,27 @@
 		display: none;
 	}
 }
-@media screen and (max-width: 782px) {
-	.mobileHide {
+@media all and (min-width: 783px) and (max-width: 1210px) {
+	.register {
+		display: block !important;
+		float: right;
+	}
+	.headerRight {
 		display: none !important;
 	}
-	.mobileBlock {
-		padding: 0 20px !important;
+	.headerMain {
+		margin: 0 0 0 200px !important;
+	}
+}
+@media screen and (max-width: 782px) {
+	.subHeader {
+		font-size: medium;
+	}
+	.contentDesc {
+		min-height: auto !important;
+	}
+	.mobileHide {
+		display: none !important;
 	}
 	.btn-main {
 		width: 100%;
@@ -79,7 +113,7 @@
 		width: 100% !important;
 	}
 }
-@media all and (max-width : 1718px) {
+@media all and (max-width: 1718px) {
 	.main {
 		width: 100%;
 	}
@@ -92,12 +126,25 @@
 		float: none !important;
 	}
 }
-@media all and (max-width : 1600px) {
+@media all and (max-width: 1600px) {
 	.headerRight {
 		font-size: 50px !important;
+		top: 500px;
+		height: 150px !important;
 	}
 }
-@media all and (min-width : 1719px) {
+@media all and (min-width: 1200px) and (max-width: 1719px) {
+	.aside {
+		flex: 1 0px;
+	}
+	.contentDesc {
+		min-height: 80px;
+	}
+	.headerMain {
+		margin: 0 100px 0 100px !important;
+	}
+}
+@media all and (min-width: 1719px) {
 	.register {
 		min-width: 450px;
 	}
@@ -149,9 +196,9 @@
 	color: white;
 	font-size: 21px;
 	font-family: aktiv-grotesk-std, helvetica, arial, sans-serif;
-	top: 150px;
+	top: 165px;
 	width: 100%;
-	min-height: 75px;
+	min-height: 60px;
 	font-weight: 400;
 }
 .bottomOverlay p {
@@ -211,8 +258,8 @@
 
 .headerRight {
 	background: rgba(43, 48, 53, 0.8);
-	top: 450px;
-	height: 200px;
+	top: 500px;
+	height: 190px;
 	color: white;
 	font-family: "Domine" !important;
 	font-size: 70px;

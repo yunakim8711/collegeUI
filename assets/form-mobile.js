@@ -21,56 +21,56 @@ $('document').ready(function() {
 	$.validator.addMethod("validDate", function(value, element) {
 		return this.optional(element) || dateregex.test(value);
 	});
-	$("#register-form").validate({
+	$("#register-form-mobile").validate({
 		rules: {
-			fname: {
+			fnameMobile: {
 				required: true,
 				validname: true,
 				minlength: 2
 			},
-			lname: {
+			lnameMobile: {
 				required: true,
 				validname: true,
 				minlength: 2
 			},
-			email: {
+			emailMobile: {
 				required: true,
 				validemail: true
 			}
 		},
 		messages: {
-			fname: {
+			fnameMobile: {
 				required: "Please Enter First Name",
 				validname: "Name must contain only alphabets and space",
 				minlength: "Your Name is Too Short"
 			},
-			lname: {
+			lnameMobile: {
 				required: "Please Enter Last Name",
 				validname: "Name must contain only alphabets and space",
 				minlength: "Your Name is Too Short"
 			},
-			email: {
+			emailMobile: {
 				required: "Please Enter Email Address",
 				validemail: "Enter Valid Email Address"
 			}
 		},
 		// functions for error display
 		errorPlacement: function(error, element) {
-			$(element).closest('.form-group').find('.help-block').html(error.html());
+			$(element).closest('.form-group-mobile').find('.help-block').html(error.html());
 		},
 		highlight: function(element) {
-			$(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+			$(element).closest('.form-group-mobile').removeClass('has-success').addClass('has-error');
 		},
 		unhighlight: function(element, errorClass, validClass) {
-			$(element).closest('.form-group').removeClass('has-error').addClass('has-success');
-			$(element).closest('.form-group').find('.help-block').html('');
+			$(element).closest('.form-group-mobile').removeClass('has-error').addClass('has-success');
+			$(element).closest('.form-group-mobile').find('.help-block').html('');
 		},
 		//submit alert
 		submitHandler: function(form) {
-			var fname = document.getElementById('fname').value;
-			var lname = document.getElementById('lname').value;
-			var email = document.getElementById('email').value;
-			alert("FirstName: " + fname + "\n" + "LastName: " + lname + "\n" + "Email: " + email);
+			var fname = document.getElementById('fnameMobile').value;
+			var lname = document.getElementById('lnameMobile').value;
+			var email = document.getElementById('emailMobile').value;
+			alert("FirstName: " + fnameMobile + "\n" + "LastName: " + lnameMobile + "\n" + "Email: " + emailMobile);
 			form.submit();
 		}
 	});
